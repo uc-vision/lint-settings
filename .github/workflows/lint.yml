@@ -25,4 +25,4 @@ jobs:
         path: lint-settings
     - name: Analysing the code with pylint
       run: |
-        pylint --rcfile="lint-settings/pylintrc" $(git ls-files '*.py')
+        pylint --rcfile "lint-settings/pylintrc" $(git ls-files '*.py')
