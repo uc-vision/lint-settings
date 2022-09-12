@@ -23,7 +23,6 @@ jobs:
       with:
         repository: uc-vision/lint-settings
         path: lint-settings
-    - name: Lint with flake8
+    - name: Analysing the code with pylint
       run: |
-        python -m pip install toml flake8
-        flake8 . --rcfile=lint-settings/pylintrc
+        pylint --rcfile="lint-settings/pylintrc" $(git ls-files '*.py')
