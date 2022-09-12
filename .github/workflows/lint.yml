@@ -24,5 +24,6 @@ jobs:
         repository: uc-vision/lint-settings
         path: lint-settings
     - name: Analysing the code with pylint
+      if: $( $(git ls-files '*.py') != '')
       run: |
         pylint --rcfile "lint-settings/pylintrc" $(git ls-files '*.py')
