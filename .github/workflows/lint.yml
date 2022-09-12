@@ -25,7 +25,7 @@ jobs:
         path: lint-settings
     - name: Analysing the code with pylint
       run: |
-        if [ ! -z $(git ls-files '*.py') ]; then 
+        if [[ $(git ls-files '*.py') ]]; then 
           pylint --rcfile "lint-settings/pylintrc" $(git ls-files '*.py')
         else
           echo "No files detected"
