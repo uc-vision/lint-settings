@@ -90,6 +90,7 @@ disable=abstract-method,
         map-builtin-not-iterating,
         misplaced-comparison-constant,
         missing-function-docstring,
+        missing-module-docstring,
         metaclass-assignment,
         next-method-called,
         next-method-defined,
@@ -117,11 +118,14 @@ disable=abstract-method,
         reduce-builtin,
         relative-import,
         reload-builtin,
+	      redefined-builtin,
         round-builtin,
+	      redefined-outer-name,
         setslice-method,
         signature-differs,
         standarderror-builtin,
         suppressed-message,
+      	superfluous-parens,
         sys-max-int,
         too-few-public-methods,
         too-many-ancestors,
@@ -135,6 +139,7 @@ disable=abstract-method,
         too-many-return-statements,
         too-many-statements,
         trailing-newlines,
+	      trailing-whitespace,
         unichr-builtin,
         unicode-builtin,
         unnecessary-pass,
@@ -146,6 +151,8 @@ disable=abstract-method,
         wrong-import-order,
         xrange-builtin,
         zip-builtin-not-iterating,
+        unnecessary-lambda-assignment
+
 
 
 [REPORTS]
@@ -259,7 +266,7 @@ generated-members=
 [FORMAT]
 
 # Maximum number of characters on a single line.
-max-line-length=80
+max-line-length=100
 
 # TODO(https://github.com/PyCQA/pylint/issues/3352): Direct pylint to exempt
 # lines made too long by directives to pytype.
