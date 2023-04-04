@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Formatting..."
-find . -name '*.py' -print0 | xargs -0 yapf -i --style "{based_on_style: google, column_limit: 80, indent_width: 2}" 
+find . -name '*.py' -print0 | xargs -0 yapf -i --style "{based_on_style: google, column_limit: 100, indent_width: 2}" 
 
 echo "Unify..."
 find . -name '*.py' -print0 | xargs -0 unify --in-place 
