@@ -149,6 +149,7 @@ disable=abstract-method,
         useless-suppression,
         using-cmp-argument,
         wrong-import-order,
+        wrong-import-position, # added
         xrange-builtin,
         zip-builtin-not-iterating,
         unnecessary-lambda-assignment
